@@ -1,4 +1,5 @@
 import ClientMessage from "@/components/client-msg";
+import ServerMessage from "@/components/server-msg";
 import Image from "next/image";
 
 export default function Home() {
@@ -26,7 +27,7 @@ export default function Home() {
             <ClientMessage />
           </li>
           <li>
-            <ClientMessage />
+            <ServerMessage />
           </li>
         </ol>
 
