@@ -1,5 +1,8 @@
 "use server";
 
-export const getEnv = async () => ({
-  NEXT_PUBLIC_MSG: process.env.NEXT_PUBLIC_MSG,
-});
+import { envsafe, str } from "envsafe";
+
+export const getEnv = async () =>
+  envsafe({
+    NEXT_PUBLIC_MSG: str(),
+  });
